@@ -1,0 +1,92 @@
+/* ------------------- responsive css part start ---------------------- */
+@media only screen and (max-width: 991px) {
+
+    .container {
+        width: 100%;
+        padding: 0px 20px;
+
+    }
+
+    #header .main_manu {
+        line-height: 80px;
+        padding: 0px 20px;
+    }
+
+    .main_manu .fa-bars {
+        display: block;
+        color: #fff;
+        font-size: 20px;
+        line-height: 80px;
+    }
+
+    .main_manu .nav_items ul {
+        display: block;
+    }
+
+    .nav_items {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: rgba(1, 1, 2, 0.877);
+        display: none;
+    }
+
+    .main_manu .nav_items ul li {
+        margin: 8px 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main_manu .nav_items ul li a {
+        color: #fff;
+        text-align: center;
+    }
+
+    .active {
+        display: block;
+    }
+
+    .banner {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+
+    .banner .banner_text {
+        padding: 100px 0px;
+    }
+
+    #bakery .bakery_items {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 60px 0;
+        /* row-gap: 30px; */
+    }
+
+    .bakery_items .bakery_items_title {
+        text-align: center;
+        grid-column: 1/-1;
+    }
+
+    .bakery_items .bakery_items_title h1 {
+        font-size: 30px;
+    }
+
+    #delicious {
+        padding: 50px 0px;
+    }
+
+    #delicious .delicious_box {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 40px;
+    }
+
+    #delicious .delicious_box_col {
+        display: flex;
+        column-gap: 20px;
+    }
+}
+
+/* ------------------- responsive css part end---------------------- */

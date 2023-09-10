@@ -1,0 +1,273 @@
+/* ---------- Fonts Part start ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* ---------- Fonts Part End ---------- */
+/* ---------- Basic CSS Part start ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+ul,
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.container {
+    width: 1145px;
+    margin: 0 auto;
+}
+
+/* ---------- Basic Part End ---------- */
+/* ---------- Main Manu Part start ---------- */
+#header {
+    background: #5f27cd;
+    height: 80px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+#header .main_manu {
+    display: flex;
+    justify-content: space-between;
+    line-height: 80px;
+
+}
+
+.main_manu .manu_logo h1 {
+    color: #fff;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.nav_items ul {
+    display: flex;
+    gap: 20px;
+}
+
+.nav_items ul li a {
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+}
+
+.nav_items ul li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #c8d6e5;
+    position: absolute;
+    top: 65%;
+    right: 0;
+    transition: all linear .5s;
+}
+
+.nav_items ul li a:hover::after {
+    width: 100%;
+}
+
+.fa-bars {
+    display: none;
+}
+
+/* ---------- Main Manu Part End ---------- */
+/* ---------- Banner Part start ---------- */
+.banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.banner .banner_text {
+    padding: 150px 50px;
+}
+
+.banner .banner_text h1 {
+    font-size: 50px;
+    color: #222f3e;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.banner .banner_text p {
+    font-size: 18px;
+    color: #576574;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+.common_button a {
+    width: 225px;
+    height: 55px;
+    color: #fff;
+    background: #5f27cd;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 50px;
+    transition: all linear .3s;
+}
+
+.common_button a:hover {
+    background: #4c0fc5;
+
+}
+
+/* ---------- Banner Part End ---------- */
+/* ---------- Bakery Items Part start ---------- */
+#bakery {
+    background: #5f27cd;
+}
+
+#bakery .bakery_items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 60px 0;
+    gap: 30px;
+}
+
+.bakery_items .bakery_items_title {
+    text-align: center;
+    grid-column: 1/4;
+}
+
+.bakery_items .bakery_items_title h1 {
+    color: #fff;
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 22px;
+}
+
+.bakery_items .bakery_items_title p {
+    color: #fff;
+    font-size: 18px;
+
+}
+
+.bakery_items .bakery_items_card {
+    background: #fff;
+}
+
+.bakery_items_card .card_text {
+    padding: 20px;
+    text-align: center;
+}
+
+.bakery_items_card .card_text h2 {
+    color: #000;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+
+.bakery_items_card .card_text p {
+    color: #222f3e;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.bakery_items_card .card_text h3 {
+    color: #5f27cd;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+/* ---------- Bakery Items Part End ---------- */
+/* ---------- Banner Two Part start ---------- */
+#banner_two {
+    background: url(../images/bg/bg_2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+#banner_two .banner_two_text {
+    padding: 100px 0;
+    text-align: center;
+}
+
+#banner_two .banner_two_text h1 {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+#banner_two .banner_two_text h4 {
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 60px;
+    font-weight: 400;
+}
+
+/* ---------- Banner Two Part End ---------- */
+/* ---------- delicious Part start ---------- */
+#delicious {
+    padding: 100px 0px;
+}
+
+#delicious .delicious_title h1 {
+    color: #222f3e;
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#delicious .delicious_box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 30px;
+}
+
+#delicious .delicious_box_col {
+    display: flex;
+    column-gap: 30px;
+}
+
+.delicious_box_col .box_col_text h3 {
+    font-size: 22px;
+    color: #222;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.delicious_box_col .box_col_text p {
+    font-size: 18px;
+    color: #222;
+    font-weight: 400;
+}
+
+/* ---------- delicious Part End ---------- */
+/* ---------- Fonts Part start ---------- */
+/* ---------- Fonts Part End ---------- */
+/* ---------- Fonts Part start ---------- */
+/* ---------- Fonts Part End ---------- */
+/* ---------- Fonts Part start ---------- */
+/* ---------- Fonts Part End ---------- */
+/* ---------- Fonts Part start ---------- */
+/* ---------- Fonts Part End ---------- */
