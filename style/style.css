@@ -41,11 +41,11 @@ img {
 #header {
     background: #5f27cd;
     height: 80px;
-    overflow: hidden;
+/*     overflow: hidden;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 9999;
+    z-index: 9999; */
 }
 
 #header .main_manu {
